@@ -1,0 +1,59 @@
+#editError {
+  position: absolute;
+  color: red;
+  top: 60px;
+  left: 80.5%;
+}
+
+.tableDesign {
+  display: flex;
+  justify-content: space-around;
+}
+
+#audioForm {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(241, 243, 244);
+  width: 85%;
+  height: 80px;
+  border-radius: 20%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.right-width {
+  min-width: 80%;
+}
+
+@media screen and (max-width: 80rem) {
+  .tableDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.box {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.box:hover {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
