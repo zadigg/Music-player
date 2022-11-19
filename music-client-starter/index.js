@@ -1,5 +1,4 @@
 let PlayerStatusState = 0;
-let repeatOnce = false;
 
 window.onload = function () {
   document.getElementById("logoutbutton").onclick = logout;
@@ -217,7 +216,6 @@ function findSongToPlay(order) {
 }
 
 function repeatOne(title, path, order) {
-  repeatOnce = true;
   document.getElementById("paragraph").innerHTML = order + ". " + title;
   let form = document.getElementById("audioForm");
   form.innerHTML = `<button onclick="findSongToPlay(${order})" 
